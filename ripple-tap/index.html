@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-title-en="Ripple Tap" data-title-vi="Ripple Tap">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,34 +8,51 @@
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<main>
-  <header class="top">
-    <img src="icon.png" alt="Ripple Tap icon">
-    <div>
-      <h1>Ripple Tap</h1>
-      <p class="muted" style="margin:0">A calm one-finger river adventure</p>
-    </div>
-  </header>
-
-  <p>Tap the water to make ripples. Each ripple gently pushes your hero along the river: tap behind it to move forward, to the side to steer, right on top of it to slow down. Dodge rocks and whirlpools, pick up the little ones and bring the whole family home.</p>
-
-  <div class="card">
-    <h3 style="margin-top:0">Four worlds in one game</h3>
-    <ul>
-      <li><b>Ripple Duck</b>: a rubber duck and its ducklings through meadows, canal towns and jungle rivers.</li>
-      <li><b>Shell Voyage</b>: a mother sea turtle leading her hatchlings across reefs, kelp forests and the glowing deep.</li>
-      <li><b>Waddle Wave</b>: a penguin dad guiding his chicks through iceberg bays, glacier canyons and aurora nights.</li>
-      <li><b>Hoa Đăng</b>: a floating lantern drifting down rivers on a lantern-festival night.</li>
-    </ul>
-    <p class="muted" style="margin-bottom:0">30 levels per world, an Endless mode, collectible characters and a daily gift. Every image and sound in the game is generated in code.</p>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="./"><img src="icon.png" alt=""><span>Ripple Tap</span></a>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-set-lang="en" aria-pressed="true">English</button>
+    <button type="button" data-set-lang="vi" aria-pressed="false">Tiếng Việt</button>
   </div>
+</div></header>
 
-  <nav class="links">
-    <a href="privacy.html">Privacy policy</a>
-    <a href="support.html">Support</a>
-  </nav>
+<main class="wrap page">
+<div data-lang="en">
+  <div class="hero">
+    <img src="banner.svg" alt="A rubber duck leading its ducklings down a river, with ripples on the water">
+    <div class="cap"><h1>Ripple Tap</h1><p>A calm one-finger river adventure</p></div>
+  </div>
+  <p style="margin-top:20px">Tap the water to make ripples. Each ripple gently pushes your hero along the river: tap behind it to move forward, to the side to steer, right on top of it to slow down. Dodge rocks and whirlpools, pick up the little ones and bring the whole family home.</p>
+  <h2>Four worlds in one game</h2>
+  <div class="cards">
+    <div class="card"><div><b>Ripple Duck</b><span>A rubber duck and its ducklings through meadows, canal towns and jungle rivers.</span></div></div>
+    <div class="card"><div><b>Shell Voyage</b><span>A mother sea turtle leading her hatchlings across reefs, kelp forests and the glowing deep.</span></div></div>
+    <div class="card"><div><b>Waddle Wave</b><span>A penguin dad guiding his chicks through iceberg bays, glacier canyons and aurora nights.</span></div></div>
+    <div class="card"><div><b>Hoa Đăng</b><span>A floating lantern drifting down rivers on a lantern-festival night.</span></div></div>
+  </div>
+  <p class="note" style="margin-top:14px">30 levels per world, an Endless mode, collectible characters and a daily gift. Every image and sound in the game is generated in code.</p>
+  <div class="links"><a href="privacy.html">Privacy policy</a><a href="support.html">Support</a></div>
+</div>
 
-  <footer>© 2026 Nguyen Duc Dao · <a href="mailto:timeforwork789@icloud.com">timeforwork789@icloud.com</a></footer>
+<div data-lang="vi" hidden>
+  <div class="hero">
+    <img src="banner.svg" alt="Chú vịt cao su dẫn đàn vịt con trôi trên dòng sông có những gợn sóng">
+    <div class="cap"><h1>Ripple Tap</h1><p>Chuyến phiêu lưu trên sông chỉ với một ngón tay</p></div>
+  </div>
+  <p style="margin-top:20px">Chạm mặt nước để tạo gợn sóng. Mỗi gợn sóng nhẹ nhàng đẩy nhân vật trôi theo dòng sông: chạm phía sau để đi tới, chạm lệch bên để lái, chạm ngay lên nhân vật để hãm lại. Né đá và xoáy nước, đón các bạn nhỏ và đưa cả gia đình về nhà.</p>
+  <h2>Bốn thế giới trong một trò chơi</h2>
+  <div class="cards">
+    <div class="card"><div><b>Ripple Duck</b><span>Chú vịt cao su cùng đàn vịt con qua đồng quê, kênh phố cổ và sông rừng nhiệt đới.</span></div></div>
+    <div class="card"><div><b>Shell Voyage</b><span>Rùa mẹ dẫn đàn rùa con qua rạn san hô, rừng tảo bẹ và biển sâu phát sáng.</span></div></div>
+    <div class="card"><div><b>Waddle Wave</b><span>Cánh cụt bố đưa đàn chim non qua vịnh băng, hẻm sông băng và đêm cực quang.</span></div></div>
+    <div class="card"><div><b>Hoa Đăng</b><span>Chiếc đèn hoa đăng trôi trên sông trong đêm hội thả đèn.</span></div></div>
+  </div>
+  <p class="note" style="margin-top:14px">Mỗi thế giới có 30 màn, chế độ Trôi mãi, nhân vật để sưu tầm và quà mỗi ngày. Toàn bộ hình ảnh và âm thanh được tạo bằng mã.</p>
+  <div class="links"><a href="privacy.html?lang=vi">Chính sách quyền riêng tư</a><a href="support.html?lang=vi">Hỗ trợ</a></div>
+</div>
+
+<footer><span>© 2026 Nguyen Duc Dao</span><a href="mailto:timeforwork789@icloud.com">timeforwork789@icloud.com</a></footer>
 </main>
+<script src="/assets/site.js"></script>
 </body>
 </html>
