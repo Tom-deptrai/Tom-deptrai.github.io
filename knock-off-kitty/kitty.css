@@ -49,6 +49,9 @@ img{max-width:100%}
 .langs button[aria-pressed="true"]{background:var(--gold);color:#2a1433}
 .menu a{white-space:nowrap}
 @media (max-width:640px){.menu a.hide-s{display:none}.brand b{display:none}.bar-in{gap:6px;padding:6px 8px}.menu{gap:2px}.menu a{padding:8px 7px;font-size:13.5px}}
+.menu .lbl-short{display:none}
+@media (max-width:430px){.brand{flex:none}.brand img{width:34px;height:34px}.menu{gap:0}.menu a{padding:8px 6px;font-size:13px}.langs{margin-left:2px}.langs button{padding:7px 8px}.menu .lbl-long{display:none}.menu .lbl-short{display:inline}}
+@media (max-width:350px){.bar-in{padding:6px}.menu a{padding:7px 3px;font-size:12px}.langs button{padding:6px 5px;font-size:12px}}
 
 /* type */
 h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.05;margin:0}
