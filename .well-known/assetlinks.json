@@ -1,10 +1,13 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.putmind.putmind",
       "sha256_cert_fingerprints": [
+        "31:5E:C8:00:92:34:64:0C:78:89:71:A0:AF:D2:19:95:C1:82:07:6D:1F:05:61:8C:00:A7:55:05:0A:95:22:1B",
         "47:98:E3:3F:A7:1E:DE:39:0E:23:85:F5:98:4E:4D:2E:19:03:E8:14:9F:41:AD:CE:70:CD:1F:B7:9F:D3:B0:71"
       ]
     }
