@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#10233D" />
+  <meta name="robots" content="noindex" />
+  <title>PutMind label</title>
+  <script>
+    // Safari's PutMind banner: "Open" passes this label to the app.
+    (function () {
+      var m = document.createElement('meta');
+      m.name = 'apple-itunes-app';
+      m.content = 'app-id=6801054532, app-argument=' + location.href;
+      document.head.appendChild(m);
+    })();
+  </script>
+  <style>
+    :root {
+      --navy: #10233d;
+      --navy-2: #1a3352;
+      --sky: #85b7eb;
+      --mist: #cfe2f7;
+      --ink: #18211d;
+      --muted: #5f6b64;
+      --line: #e4e9e5;
+      --accent: #24765d;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      min-height: 100vh;
+      background: var(--navy);
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto,
+        "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      justify-content: center;
+      padding: max(28px, env(safe-area-inset-top)) 16px max(28px, env(safe-area-inset-bottom));
+    }
+    main { width: 100%; max-width: 420px; }
+    .brand { text-align: center; margin: 8px 0 24px; }
+    .brand img {
+      width: 88px; height: 88px; display: block; margin: 0 auto 14px;
+      filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.35));
+    }
+    .brand h1 { margin: 0; font-size: 28px; font-weight: 600; letter-spacing: 0.2px; }
+    .brand p { margin: 6px 0 0; color: var(--mist); font-size: 16px; }
+    .card {
+      background: #fff; color: var(--ink);
+      border-radius: 22px; padding: 22px 20px 20px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+    }
+    .tag {
+      display: flex; gap: 14px; align-items: center; margin-bottom: 12px;
+    }
+    .tag .qr {
+      flex: 0 0 48px; height: 48px; border-radius: 14px;
+      background: #eef3f0; display: grid; place-items: center; color: var(--accent);
+    }
+    .tag h2 { margin: 0; font-size: 19px; line-height: 1.25; }
+    .card p { margin: 0 0 18px; color: var(--muted); font-size: 15.5px; line-height: 1.5; }
+    .btn {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      width: 100%; min-height: 52px; border-radius: 15px;
+      font-size: 17px; font-weight: 600; text-decoration: none;
+    }
+    .btn.primary { background: var(--navy); color: #fff; }
+    .btn.store { background: #000; color: #fff; }
+    .btn.secondary { border: 1.5px solid var(--line); color: var(--ink); margin-top: 10px; }
+    .hint { text-align: center; color: var(--muted); font-size: 13px; margin: 8px 0 0; }
+    .private {
+      display: flex; gap: 10px; align-items: flex-start;
+      margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line);
+      color: var(--muted); font-size: 13.5px; line-height: 1.45;
+    }
+    .private svg { flex: 0 0 18px; margin-top: 1px; color: var(--accent); }
+    .features { margin: 26px 4px 0; }
+    .features h3 {
+      margin: 0 0 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.6px;
+      text-transform: uppercase; color: var(--sky);
+    }
+    .feature {
+      display: flex; align-items: center; gap: 14px; padding: 12px 14px;
+      background: var(--navy-2); border-radius: 16px; margin-bottom: 10px;
+      font-size: 15.5px; font-weight: 500;
+    }
+    .feature span.icon {
+      flex: 0 0 38px; height: 38px; border-radius: 11px; background: var(--navy);
+      display: grid; place-items: center; color: var(--sky);
+    }
+    footer { text-align: center; margin-top: 22px; font-size: 13px; }
+    footer a { color: var(--sky); }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">
+      <img src="logo.png" alt="" width="88" height="88" />
+      <h1>PutMind</h1>
+      <p data-t="tagline">Remembers where you put everything</p>
+    </div>
+
+    <section class="card">
+      <div class="tag">
+        <div class="qr" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg>
+        </div>
+        <h2 data-t="labelTitle">This is a PutMind label</h2>
+      </div>
+      <p data-t="labelBody">Its owner used PutMind to note what's inside. Scan it with PutMind on the owner's phone to see the contents.</p>
+
+      <a id="store" class="btn store first" href="https://apps.apple.com/app/id6801054532">
+        <svg width="18" height="20" viewBox="0 0 384 470" fill="currentColor" aria-hidden="true"><path d="M318 249c-1-55 45-82 47-83-26-37-65-42-79-43-34-3-66 20-83 20s-43-19-71-19C95 125 61 147 42 181c-39 68-10 168 28 223 18 27 40 57 69 56 28-1 38-18 72-18s43 18 72 17c30 0 49-27 67-54 21-31 30-61 30-63-1 0-58-22-58-93zM263 87c15-18 25-43 22-68-21 1-47 14-62 32-14 16-26 41-23 66 24 2 48-12 63-30z"/></svg>
+        <span data-t="get">Download on the App Store</span>
+      </a>
+      <a id="play" class="btn secondary" href="#" hidden>
+        <span data-t="getPlay">Get it on Google Play</span>
+      </a>
+      <a id="open" class="btn secondary" href="#" hidden>
+        <span data-t="open">Open in PutMind</span>
+      </a>
+      <p id="openHint" class="hint" data-t="openHint" hidden>Already have PutMind? Open this box directly.</p>
+
+      <div class="private">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+        <span data-t="private">This page can't see what's inside. The label only holds a random code — everything stays on the owner's phone.</span>
+      </div>
+    </section>
+
+    <section class="features">
+      <h3 data-t="featuresTitle">With PutMind you can</h3>
+      <div class="feature">
+        <span class="icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></span>
+        <span data-t="f1">Snap a photo and say where it goes</span>
+      </div>
+      <div class="feature">
+        <span class="icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg></span>
+        <span data-t="f2">Find anything in seconds</span>
+      </div>
+      <div class="feature">
+        <span class="icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/></svg></span>
+        <span data-t="f3">Label boxes with QR codes</span>
+      </div>
+    </section>
+
+    <footer><a href="privacy" data-t="privacyLink">Privacy policy</a></footer>
+  </main>
+
+  <script>
+    (function () {
+      // Google Play link appears once PutMind is public there.
+      var PLAY_URL = '';
+
+      var T = {
+        en: { tagline: "Remembers where you put everything", labelTitle: "This is a PutMind label", labelBody: "Its owner used PutMind to note what's inside. Scan it with PutMind on the owner's phone to see the contents.", open: "Open in PutMind", openHint: "Already have PutMind? Open this box directly.", get: "Download on the App Store", getPlay: "Get it on Google Play", "private": "This page can't see what's inside. The label only holds a random code — everything stays on the owner's phone.", featuresTitle: "With PutMind you can", f1: "Snap a photo and say where it goes", f2: "Find anything in seconds", f3: "Label boxes with QR codes", privacyLink: "Privacy policy" },
+        vi: { tagline: "Nhớ giúp bạn mọi thứ để ở đâu", labelTitle: "Đây là nhãn PutMind", labelBody: "Chủ nhãn dùng PutMind để ghi lại trong hộp có gì. Quét nhãn bằng PutMind trên điện thoại của chủ nhãn để xem.", open: "Mở trong PutMind", openHint: "Đã có PutMind? Mở thẳng hộp này.", get: "Tải trên App Store", getPlay: "Tải trên Google Play", "private": "Trang này không biết trong hộp có gì. Nhãn chỉ chứa một mã ngẫu nhiên — mọi thông tin chỉ nằm trên điện thoại của chủ nhãn.", featuresTitle: "Với PutMind, bạn có thể", f1: "Chụp ảnh, nói chỗ cất", f2: "Tìm lại đồ trong vài giây", f3: "Dán nhãn QR cho từng hộp", privacyLink: "Chính sách quyền riêng tư" },
+        de: { tagline: "Merkt sich, wo du alles hingelegt hast", labelTitle: "Das ist ein PutMind-Etikett", labelBody: "Der Besitzer hat mit PutMind notiert, was drin ist. Scanne es mit PutMind auf dem Handy des Besitzers, um den Inhalt zu sehen.", open: "In PutMind öffnen", openHint: "Du hast PutMind? Öffne diese Kiste direkt.", get: "Im App Store laden", getPlay: "Jetzt bei Google Play", "private": "Diese Seite sieht nicht, was drin ist. Das Etikett enthält nur einen zufälligen Code – alles bleibt auf dem Handy des Besitzers.", featuresTitle: "Mit PutMind kannst du", f1: "Foto machen und sagen, wo es liegt", f2: "Alles in Sekunden wiederfinden", f3: "Kisten mit QR-Etiketten versehen", privacyLink: "Datenschutzerklärung" },
+        es: { tagline: "Recuerda dónde guardaste cada cosa", labelTitle: "Esta es una etiqueta de PutMind", labelBody: "Su dueño anotó con PutMind lo que hay dentro. Escanéala con PutMind en el teléfono del dueño para ver el contenido.", open: "Abrir en PutMind", openHint: "¿Ya tienes PutMind? Abre esta caja directamente.", get: "Descargar en el App Store", getPlay: "Disponible en Google Play", "private": "Esta página no puede ver qué hay dentro. La etiqueta solo contiene un código aleatorio; todo se queda en el teléfono del dueño.", featuresTitle: "Con PutMind puedes", f1: "Hacer una foto y decir dónde la guardas", f2: "Encontrar cualquier cosa en segundos", f3: "Etiquetar cajas con códigos QR", privacyLink: "Política de privacidad" },
+        fr: { tagline: "Se souvient où vous rangez tout", labelTitle: "Ceci est une étiquette PutMind", labelBody: "Son propriétaire a noté avec PutMind ce qu'elle contient. Scannez-la avec PutMind sur le téléphone du propriétaire pour voir le contenu.", open: "Ouvrir dans PutMind", openHint: "Vous avez PutMind ? Ouvrez directement cette boîte.", get: "Télécharger dans l'App Store", getPlay: "Disponible sur Google Play", "private": "Cette page ne voit pas ce qu'il y a dedans. L'étiquette ne contient qu'un code aléatoire — tout reste sur le téléphone du propriétaire.", featuresTitle: "Avec PutMind, vous pouvez", f1: "Prendre une photo et dire où vous le rangez", f2: "Tout retrouver en quelques secondes", f3: "Étiqueter vos boîtes avec des QR codes", privacyLink: "Politique de confidentialité" },
+        it: { tagline: "Ricorda dove hai messo ogni cosa", labelTitle: "Questa è un'etichetta PutMind", labelBody: "Il proprietario ha annotato con PutMind cosa contiene. Scansionala con PutMind sul telefono del proprietario per vederne il contenuto.", open: "Apri in PutMind", openHint: "Hai già PutMind? Apri direttamente questa scatola.", get: "Scarica dall'App Store", getPlay: "Disponibile su Google Play", "private": "Questa pagina non vede cosa c'è dentro. L'etichetta contiene solo un codice casuale: tutto resta sul telefono del proprietario.", featuresTitle: "Con PutMind puoi", f1: "Scattare una foto e dire dove lo metti", f2: "Ritrovare tutto in pochi secondi", f3: "Etichettare le scatole con codici QR", privacyLink: "Informativa sulla privacy" },
+        ja: { tagline: "どこに置いたか、代わりに覚えておきます", labelTitle: "これは PutMind のラベルです", labelBody: "持ち主が PutMind で中身を記録しています。持ち主のスマートフォンの PutMind でスキャンすると中身が見られます。", open: "PutMind で開く", openHint: "PutMind をお持ちですか？この箱を直接開けます。", get: "App Store からダウンロード", getPlay: "Google Play で手に入れよう", "private": "このページには中身はわかりません。ラベルにはランダムなコードしか入っておらず、情報はすべて持ち主のスマートフォンの中にあります。", featuresTitle: "PutMind でできること", f1: "写真を撮って、しまった場所を話すだけ", f2: "数秒で見つかる", f3: "箱に QR ラベルを貼れる", privacyLink: "プライバシーポリシー" },
+        ko: { tagline: "어디에 뒀는지 대신 기억해 드려요", labelTitle: "PutMind 라벨이에요", labelBody: "주인이 PutMind로 안에 든 물건을 기록했어요. 주인의 휴대폰에서 PutMind로 스캔하면 내용을 볼 수 있어요.", open: "PutMind에서 열기", openHint: "PutMind가 있나요? 이 상자를 바로 열어 보세요.", get: "App Store에서 다운로드", getPlay: "Google Play에서 받기", "private": "이 페이지는 안에 무엇이 있는지 알 수 없어요. 라벨에는 무작위 코드만 있고, 모든 정보는 주인의 휴대폰에만 있어요.", featuresTitle: "PutMind로 할 수 있는 일", f1: "사진 찍고 둔 곳을 말하기", f2: "몇 초 만에 찾기", f3: "상자에 QR 라벨 붙이기", privacyLink: "개인정보 처리방침" },
+        pt: { tagline: "Lembra-se de onde guardou cada coisa", labelTitle: "Esta é uma etiqueta PutMind", labelBody: "O dono registou no PutMind o que está lá dentro. Leia-a com o PutMind no telemóvel do dono para ver o conteúdo.", open: "Abrir no PutMind", openHint: "Já tem o PutMind? Abra esta caixa diretamente.", get: "Descarregar na App Store", getPlay: "Disponível no Google Play", "private": "Esta página não sabe o que está lá dentro. A etiqueta só tem um código aleatório — tudo fica no telemóvel do dono.", featuresTitle: "Com o PutMind pode", f1: "Tirar uma foto e dizer onde guardou", f2: "Encontrar tudo em segundos", f3: "Etiquetar caixas com códigos QR", privacyLink: "Política de privacidade" },
+        "pt-BR": { tagline: "Lembra onde você guardou cada coisa", labelTitle: "Esta é uma etiqueta do PutMind", labelBody: "O dono anotou no PutMind o que tem dentro. Escaneie com o PutMind no celular do dono para ver o conteúdo.", open: "Abrir no PutMind", openHint: "Já tem o PutMind? Abra esta caixa direto.", get: "Baixar na App Store", getPlay: "Disponível no Google Play", "private": "Esta página não sabe o que tem dentro. A etiqueta só tem um código aleatório — tudo fica no celular do dono.", featuresTitle: "Com o PutMind você pode", f1: "Tirar uma foto e dizer onde guardou", f2: "Encontrar qualquer coisa em segundos", f3: "Etiquetar caixas com códigos QR", privacyLink: "Política de privacidade" },
+        "zh-Hans": { tagline: "帮你记住每样东西放在哪里", labelTitle: "这是一个 PutMind 标签", labelBody: "主人用 PutMind 记录了里面放了什么。用主人手机上的 PutMind 扫描即可查看。", open: "在 PutMind 中打开", openHint: "已经安装 PutMind？直接打开这个盒子。", get: "在 App Store 下载", getPlay: "在 Google Play 下载", "private": "此页面无法看到里面有什么。标签上只有一串随机代码，所有信息只保存在主人的手机上。", featuresTitle: "用 PutMind 你可以", f1: "拍张照，说出放在哪", f2: "几秒钟就能找到", f3: "给盒子贴上二维码标签", privacyLink: "隐私政策" },
+        "zh-Hant": { tagline: "幫你記住每樣東西放在哪裡", labelTitle: "這是一個 PutMind 標籤", labelBody: "主人用 PutMind 記錄了裡面放了什麼。用主人手機上的 PutMind 掃描即可查看。", open: "在 PutMind 中開啟", openHint: "已經安裝 PutMind？直接開啟這個盒子。", get: "在 App Store 下載", getPlay: "在 Google Play 下載", "private": "此頁面無法看到裡面有什麼。標籤上只有一串隨機代碼，所有資訊只保存在主人的手機上。", featuresTitle: "用 PutMind 你可以", f1: "拍張照，說出放在哪", f2: "幾秒鐘就能找到", f3: "為盒子貼上 QR 標籤", privacyLink: "隱私權政策" }
+      };
+
+      function pick() {
+        var langs = navigator.languages || [navigator.language || 'en'];
+        for (var i = 0; i < langs.length; i++) {
+          var l = String(langs[i]);
+          var low = l.toLowerCase();
+          if (low.indexOf('zh') === 0) {
+            return /hant|tw|hk|mo/.test(low) ? 'zh-Hant' : 'zh-Hans';
+          }
+          if (low.indexOf('pt') === 0) return /br/.test(low) ? 'pt-BR' : 'pt';
+          var base = low.split('-')[0];
+          if (T[base]) return base;
+        }
+        return 'en';
+      }
+
+      var lang = pick();
+      var t = T[lang];
+      document.documentElement.lang = lang;
+      document.title = t.labelTitle;
+      var nodes = document.querySelectorAll('[data-t]');
+      for (var i = 0; i < nodes.length; i++) {
+        var key = nodes[i].getAttribute('data-t');
+        if (t[key]) nodes[i].textContent = t[key];
+      }
+
+      // The box code sits after "#" and never reaches any server.
+      var id = location.hash.slice(1);
+      if (/^[A-Za-z0-9-]{6,64}$/.test(id)) {
+        var open = document.getElementById('open');
+        open.href = 'putmind://open/PutMind-Find-your-things/q#' + id;
+        open.hidden = false;
+        document.getElementById('openHint').hidden = false;
+      }
+
+      var isAndroid = /android/i.test(navigator.userAgent);
+      if (PLAY_URL) {
+        var play = document.getElementById('play');
+        play.href = PLAY_URL;
+        play.hidden = false;
+        if (isAndroid) document.getElementById('store').hidden = true;
+      }
+    })();
+  </script>
+</body>
+</html>

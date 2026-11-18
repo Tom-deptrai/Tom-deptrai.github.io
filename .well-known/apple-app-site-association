@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["VZAHR6GK36.com.putmind.putmind"],
+        "components": [
+          {
+            "/": "/PutMind-Find-your-things/q",
+            "comment": "PutMind QR labels: open the box in the app"
+          },
+          {
+            "/": "/PutMind-Find-your-things/q/",
+            "comment": "Same, with a trailing slash"
+          }
+        ]
+      }
+    ]
+  }
+}
